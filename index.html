@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,35 +19,88 @@
   </head>
   <body>
     <main>
-      <div>
+      <div class="hero-main-background">
         <header>
-          <a href="">міміно</a>
-          <ul>
-            <li><a href="">Ресторан</a></li>
-            <li>
-              <a href=""><span>095 555 95 33</span></a>
-            </li>
-            <li><a href="">Готель</a></li>
-            <li>
-              <a href=""><span>066 849 10 89</span> <span>067 275 85 40</span></a>
-            </li>
-          </ul>
-          <ul>
-            <li><a href="">insta</a></li>
-            <li><a href=""></a>face</li>
-            <li><a href=""></a>telega</li>
-          </ul>
+          <div class="container">
+            <div class="header-main-nav">
+              <a href="" class="logo">міміно</a>
+              <ul class="header-nav">
+                <li class="header-nav__item"><a class="header-nav__link" href="">Ресторан</a></li>
+                <li class="header-nav__item">
+                  <a class="header-nav__contact" href="">
+                    <svg class="header-nav__contact-icon">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                    <p class="header-nav__tel">095 555 95 33</p></a
+                  >
+                </li>
+                <li class="header-nav__item"><a class="header-nav__link" href="">Готель</a></li>
+                <li class="header-nav__item">
+                  <a class="header-nav__contact" href="">
+                    <svg class="header-nav__contact-icon">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                    <p class="header-nav__tel header-nav__tel--margin-right">066 849 10 89</p>
+                    <p class="header-nav__tel">067 275 85 40</p></a
+                  >
+                </li>
+              </ul>
+              <ul class="header-soc">
+                <li class="header-soc__item">
+                  <a
+                    class="header-soc__link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="header-soc__icon">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-soc__item">
+                  <a
+                    class="header-soc__link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="header-soc__icon">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-soc__item">
+                  <a
+                    class="header-soc__link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="header-soc__icon">
+                      <use href="./images/icons.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
-        <section>
-          <h1>міміно</h1>
-          <h2>Ресторанно-готельний комплекс</h2>
-          <p>смак життя24/7</p>
-          <a href=""
-            >Україна, м. Полтава,<br />
-            вул. Маршала Бірюзова, 15</a
-          >
-          <button type="button">Забронювати столик</button>
-          <button type="button">Забронювати номер</button>
+        <section class="hero">
+          <div class="container">
+            <h1 class="hero__title">міміно</h1>
+            <h2 class="hero__sub-title">Ресторанно-готельний комплекс</h2>
+            <p class="hero__text">смак життя24/7</p>
+            <a class="hero__map-location" href=""
+              ><svg class="hero__map-location-icon">
+                <use href="./images/icons.svg#map_location"></use>
+              </svg>
+              Україна, м. Полтава,<br />
+              вул. Маршала Бірюзова, 15</a
+            >
+            <button class="reservation-button reservation-button--margin-right" type="button">
+              Забронювати столик
+            </button>
+            <button class="reservation-button" type="button">Забронювати номер</button>
+          </div>
         </section>
       </div>
     </main>
