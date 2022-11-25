@@ -131,6 +131,7 @@
 
 .hero {
   padding: 105px 0 20px 0;
+
   @media screen and (min-width: 1024px) {
     padding: 88px 0 15px 0;
   }
@@ -204,16 +205,17 @@
 
 .hero-elements-position {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (max-width: 1023px) {
-    flex-direction: column;
-    align-items: center;
     gap: 24px;
+    margin-bottom: 58px;
   }
 
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 58px;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    align-items: flex-end;
   }
 
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -255,6 +257,11 @@
   margin-right: 8px;
 
   fill: rgba(243, 198, 83, 0.7);
+
+  @media screen and (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .reservation-button {
