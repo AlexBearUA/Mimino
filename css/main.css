@@ -110,15 +110,6 @@ img {
           align-items: center;
 }
 
-.header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .logo {
   margin-right: auto;
   font-family: "Montserrat", sans-serif;
@@ -150,6 +141,16 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 359px) {
+  .header-nav {
+    width: 140px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .header-nav__item:nth-child(odd) {
   margin-right: 6px;
@@ -160,8 +161,10 @@ img {
   }
 }
 
-.header-nav__item:nth-child(2) {
-  margin-right: 20px;
+@media screen and (min-width: 360px) {
+  .header-nav__item:nth-child(2) {
+    margin-right: 20px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .header-nav__item:nth-child(2) {
