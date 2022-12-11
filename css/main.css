@@ -627,17 +627,16 @@ img {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-size: 0;
   z-index: 10;
   cursor: pointer;
   width: 40px;
   height: 40px;
-  border: none;
-  font-size: 0;
   background-color: rgba(0, 0, 0, 0.65);
 }
 .hero-slider .slick-arrow.slick-prev {
   left: 15px;
-  background-image: url("../images/svg/hero-slider-arrow-left.svg");
+  background-image: url("/images/svg/hero-slider-arrow-left.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -654,7 +653,7 @@ img {
 }
 .hero-slider .slick-arrow.slick-next {
   right: 15px;
-  background-image: url("../images/svg/hero-slider-arrow-right.svg");
+  background-image: url("/images/svg/hero-slider-arrow-right.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

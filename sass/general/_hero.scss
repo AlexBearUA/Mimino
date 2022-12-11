@@ -327,14 +327,14 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 0;
+
     z-index: 10;
 
     cursor: pointer;
 
     width: 40px;
     height: 40px;
-    border: none;
-    font-size: 0;
     background-color: rgba(0, 0, 0, 0.65);
 
     &.slick-prev {
@@ -347,7 +347,8 @@
         left: 85px;
       }
 
-      background-image: url('../images/svg/hero-slider-arrow-left.svg');
+      background-image: url('/images/svg/hero-slider-arrow-left.svg');
+
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -363,7 +364,8 @@
         right: 85px;
       }
 
-      background-image: url('../images/svg/hero-slider-arrow-right.svg');
+      background-image: url('/images/svg/hero-slider-arrow-right.svg');
+
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
