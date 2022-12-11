@@ -31,17 +31,36 @@ img {
 .container {
   position: relative;
 
-  max-width: 414px;
   margin: 0 auto;
   padding: 0 15px;
 
+  &--room-page {
+    height: 420px;
+
+    @media screen and (min-width: 360px) {
+      height: 567px;
+    }
+
+    @media screen and (min-width: 414px) {
+      height: 664px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      height: 620px;
+    }
+  }
+
+  @media screen and (min-width: 414px) {
+    width: 414px;
+  }
+
   @media screen and (min-width: 1024px) {
-    max-width: 1024px;
+    width: 1024px;
     padding: 0 47px;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    width: 1280px;
     padding: 0 85px;
   }
 }

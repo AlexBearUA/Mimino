@@ -11,7 +11,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <main>
@@ -19,7 +18,7 @@
         <header>
           <div class="container">
             <div class="header-container">
-              <a href="./index.html" class="logo">mimiho</a>
+              <a href="./index.html" class="header-logo">mimiho</a>
               <ul class="header-nav">
                 <li class="header-nav__item">
                   <a class="header-nav__link" href="./restaurant.html">Ресторан</a>
@@ -53,7 +52,7 @@
             <h1 class="hero__title">mimiho</h1>
             <h2 class="hero__sub-title">Ресторан</h2>
             <p class="hero__text">смак життя 24/7</p>
-            <div class="hero-elements-position">
+            <div class="hero__elements-position">
               <a
                 class="hero__map-location"
                 href="https://goo.gl/maps/nCRCqF7u8mZtbLEB7"
@@ -65,29 +64,45 @@
                 Україна, м. Полтава,<br />
                 вул. Маршала Бірюзова, 15</a
               >
-              <button class="reservation-button reservation-button--margin-right" type="button">
+              <button
+                class="hero__button hero__button--margin-right btn-open-book-table"
+                type="button"
+              >
                 Забронювати столик
               </button>
-              <button class="reservation-button" type="button">Переглянути меню</button>
+              <a class="hero__button hero__button--shorter" href="#menu"> Переглянути меню </a>
             </div>
-            <ul class="soc">
-              <li class="soc__item">
-                <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                  ><svg class="soc__icon">
+            <ul class="hero__social">
+              <li class="hero__social-item">
+                <a
+                  class="hero__social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  ><svg class="hero__social-icon">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="soc__item">
-                <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                  <svg class="soc__icon">
+              <li class="hero__social-item">
+                <a
+                  class="hero__social-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="hero__social-icon">
                     <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="soc__item">
-                <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                  ><svg class="soc__icon">
+              <li class="hero__social-item">
+                <a
+                  class="hero__social-link"
+                  href="https://xn--80affa3aj0al.xn--80asehdb/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  ><svg class="hero__social-icon">
                     <use href="./images/icons.svg#telegram"></use>
                   </svg>
                 </a>

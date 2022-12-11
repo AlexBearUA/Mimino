@@ -1,0 +1,47 @@
+// Social networks
+
+.hero__social {
+  z-index: 10;
+  display: flex;
+  gap: 20px;
+
+  &--room-page {
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &--room-page {
+      flex-direction: row;
+      gap: 20px;
+      position: absolute;
+      bottom: 38px;
+      left: 372px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    bottom: 594px;
+    left: 1083px;
+    &--room-page {
+      bottom: 658px;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-icon {
+    width: 24px;
+    height: 24px;
+
+    fill: rgba(243, 198, 83, 0.7);
+  }
+}

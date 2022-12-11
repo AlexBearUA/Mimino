@@ -2,5 +2,7 @@
 @import './utils/mixins';
 @import './base/general';
 @import './utils/visually-hidden';
-@import './components/hero-backgrounds';
-@import './components/header&hero';
+@import './general/header';
+@import './general/hero';
+@import './general/hero-backgrounds';
+@import './general/socials';
